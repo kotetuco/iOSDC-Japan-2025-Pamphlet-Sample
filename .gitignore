@@ -61,3 +61,7 @@ build-iPhoneSimulator/
 # for InDesign
 
 *.idlk
+
+# for Affinity Designer
+
+*~lock~
