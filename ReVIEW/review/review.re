@@ -82,7 +82,7 @@ iOSDC Japan のパンフレットは、たて 297 mm、よこ 210 mm の A4 サ�
 
 筆者のパンフレット記事については、天、地、小口、のど（上、下、左、右）それぞれ 20 mm のマージンを設定しました（@<b>{図 2}）。また、スペースを有効活用するため、テキストは二段組（二列）のレイアウトを採用しました。
 
-//image[figure2][本稿で出力するパンフレット記事の寸法][scale=1.0]{
+//image[figure2][本稿で出力するパンフレット記事の寸法][scale=0.55]{
 //}
 
 == Adobe InDesign を使用した入稿データ作成
@@ -117,7 +117,7 @@ iOSDC Japan のパンフレットは、たて 297 mm、よこ 210 mm の A4 サ�
 
 原稿の執筆がある程度進んだら、入稿用の PDF ファイルを出力してみましょう。メニューバーから「ファイル」「書き出し」の順に選択し、書き出し設定を行う画面を開きましょう（@<b>{図 5}）。
 
-//image[figure5][PDF出力設定（抜粋）][scale=1.0]{
+//image[figure5][PDF出力設定（抜粋）][scale=0.75]{
 //}
 
 まずは、PDF 書き出しプリセットを「[PDF/X-1a:2001(日本)]」に設定します。PDF/X-1a:2001 は、印刷用途に最適化された PDF の規格です。プリセットを変更したことでその下の「標準」が「PDF/X-1a:2001」、「互換性」が「Acrobat 4 (PDF 1.3)」にそれぞれ変更されていることを確認して下さい。
@@ -188,7 +188,7 @@ iOSDC Japan のパンフレット記事は、決められたページ数と入�
 
 === 本稿で扱ったサンプル一式の配布先（GitHub）
 
-//image[qrcode][https://github.com/kotetuco/iOSDC-Japan-2025-Pamphlet-Sample][scale=1.0]{
+//image[qrcode][https://github.com/kotetuco/iOSDC-Japan-2025-Pamphlet-Sample][scale=0.5]{
 //}
 
 //footnote[fn1][Desk Top Publishing。PC 上で印刷物のデザインや編集を行うこと。]

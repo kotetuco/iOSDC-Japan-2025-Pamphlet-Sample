@@ -365,7 +365,7 @@ texstyle: ["reviewmacro"]
 texdocumentclass:
   [
     "review-jsbook",
-    "media=print,paper=a4,tombopaper=a4,twocolumn,oneside,openleft,head_space=20mm,gutter=20mm,fontsize=10pt,number_of_lines=46",
+    "media=print,paper=a4,tombopaper=a4,twocolumn,oneside,openleft,head_space=20mm,gutter=20mm,fontsize=9pt,number_of_lines=52",
   ]
 #
 # LaTeX用のコマンドを指定する

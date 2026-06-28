@@ -3,8 +3,17 @@
 module ReVIEW
   module LATEXBuilderOverride
     # gem install unicode-display_width
-    require 'unicode/display_width'
-    require 'unicode/display_width/string_ext'
+    begin
+      require 'unicode/display_width'
+      require 'unicode/display_width/string_ext'
+    rescue LoadError
+      # unicode-display_width が利用できない場合はバイト数による簡易推定にフォールバック
+      class ::String
+        def display_width(ambiguous = 1)
+          each_char.sum { |c| c.bytesize > 1 ? 2 : 1 }
+        end
+      end
+    end
 
     CR = '' # 送り出し文字。LaTeXコードも可
     ZWSCALE = 0.875 # 和文・欧文の比率。\setlength{\xkanjiskip}{\z@} しておいたほうがよさそう
@@ -17,7 +26,7 @@ module ReVIEW
       s.each_char do |c|
         cw = c.display_width(2) # Ambiguousを全角扱い
         cw *= ZWSCALE if cw == 2
-        
+
         if w + cw > n
           a.push(l)
           l = c

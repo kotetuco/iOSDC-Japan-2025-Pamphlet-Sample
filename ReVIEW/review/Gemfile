@@ -4,4 +4,4 @@ gem 'rake'
 gem 'review', '5.9.0'
 
 # For review-ext.rb
-gem unicode-display_width
+gem 'unicode-display_width'
