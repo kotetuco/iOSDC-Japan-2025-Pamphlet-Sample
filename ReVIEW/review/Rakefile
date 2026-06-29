@@ -2,15 +2,14 @@ Dir.glob('lib/tasks/*.rake').sort.each do |file|
   load(file)
 end
 
-BOOK_CMYK_PDF = BOOK + '_cmyk.pdf'
-
 desc 'generate CMYK PDF file'
 task pdf_cmyk: :pdf do
+  cmyk_pdf = BOOK + '_cmyk.pdf'
   sh "gs -dBATCH -dNOPAUSE -dSAFER " \
      "-sDEVICE=pdfwrite " \
      "-sColorConversionStrategy=CMYK " \
      "-dProcessColorModel=/DeviceCMYK " \
      "-dCompatibilityLevel=1.4 " \
-     "-sOutputFile=#{BOOK_CMYK_PDF} " \
+     "-sOutputFile=#{cmyk_pdf} " \
      "#{BOOK_PDF}"
 end
