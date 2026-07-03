@@ -1,6 +1,6 @@
-# iOSDC-Japan-2025-Pamphlet-Sample
+# iOSDC　Japan　2025　Pamphlet　Sample
 
-iOSDC Japan 2025 パンフレット記事で使用したサンプルプロジェクト置き場です。
+iOSDC Japan 2025 パンフレット記事「[実体験から学ぶ！ iOSDC Japan パンフレット記事入稿のコツ](https://fortee.jp/iosdc-japan-2025/proposal/c1ac1019-07fd-466b-899e-c2f48bc1ceaf)」で使用したサンプルプロジェクト置き場です。
 
 同じ記事を Adobe InDesign、Affinity Publisher、Re:VIEW で作成したサンプルを含んでいます。主に、パンフレット記事の入稿用 PDF を作る際のレイアウト設定や出力手順を確認するためのリポジトリです。
 
@@ -11,8 +11,6 @@ iOSDC Japan 2025 パンフレット記事で使用したサンプルプロジェ
 | `InDesign/` | Adobe InDesign 版の原稿データと出力済み PDF を配置しています。 |
 | `AffinityPublisher/` | Affinity Publisher 版の原稿データと出力済み PDF を配置しています。InDesign から書き出した `.idml` も含みます。 |
 | `ReVIEW/` | Re:VIEW 版の原稿、設定ファイル、画像、LaTeX スタイルを配置しています。 |
-| `images/` | 各 DTP ツールで共通して利用する画像素材を配置しています。 |
-| `docs/` | 作業メモやレイアウト調整計画などのドキュメントを配置しています。 |
 
 ## Re:VIEW 版について
 
@@ -80,13 +78,8 @@ cd ReVIEW/review
 docker run --rm -v `pwd`:/work vvakame/review:5.9 /bin/sh -c "cd work && rake pdf_cmyk"
 ```
 
-生成されるファイルは以下です。
+生成後、以下のファイルが作成されます。
 
 ```text
 ReVIEW/review/book_cmyk.pdf
 ```
-
-## 参考
-
-- iOSDC Japan 2025 パンフレット記事のサンプルとして作成しています。
-- Re:VIEW 版の PDF 出力は `ReVIEW/review/config.yml` と `ReVIEW/review/sty/review-custom.sty` の設定に依存します。
