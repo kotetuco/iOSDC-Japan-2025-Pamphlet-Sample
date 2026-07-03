@@ -1,0 +1,37 @@
+% for user-defined macro
+
+% ページ番号を消す
+\pagestyle{empty}
+
+% カラム底揃えを無効にして余分な縦余白を防ぐ
+\raggedbottom
+
+% チャプター見出しを縮小（デフォルト: \Huge + 5\Cvs → \LARGE + 1.5\Cvs）
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+  \vspace*{.5\Cvs}%
+  {\parindent \z@ \raggedright \normalfont
+    \interlinepenalty\@M
+    \LARGE\headfont #1\par\nobreak
+    \vskip \Cvs}}
+\renewcommand{\@makeschapterhead}[1]{%
+  \noindent\hspace*{-20mm}\includegraphics[height=21mm, viewport=267 0 851 62, clip]{images/title}\par%
+  \vskip \Cvs}
+\makeatother
+
+% セクション見出し（==）のフォントと余白を縮小
+\makeatletter
+\renewcommand{\section}{%
+  \if@slide\clearpage\fi
+  \@startsection{section}{1}{\z@}%
+  {.5\Cvs \@plus.5\Cdp \@minus.2\Cdp}%
+  {.3\Cvs \@plus.3\Cdp}%
+  {\normalfont\large\headfont\raggedright}}
+
+% サブセクション見出し（===）の余白を縮小
+\renewcommand{\subsection}{%
+  \@startsection{subsection}{2}{\z@}%
+  {.5\Cvs \@plus.5\Cdp \@minus.2\Cdp}%
+  {.2\Cvs \@plus.3\Cdp}%
+  {\normalfont\normalsize\headfont\raggedright}}
+\makeatother

@@ -1,0 +1,35 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    image_size (3.6.0)
+    pastel (0.8.0)
+      tty-color (~> 0.5)
+    rake (13.4.2)
+    review (5.9.0)
+      image_size
+      rexml
+      rouge
+      rubyzip
+      tty-logger
+    rexml (3.4.4)
+    rouge (5.0.0)
+      strscan (~> 3.1)
+    rubyzip (3.4.1)
+    strscan (3.1.8)
+    tty-color (0.6.0)
+    tty-logger (0.6.0)
+      pastel (~> 0.8)
+    unicode-display_width (3.2.0)
+      unicode-emoji (~> 4.1)
+    unicode-emoji (4.2.0)
+
+PLATFORMS
+  arm64-darwin-22
+
+DEPENDENCIES
+  rake
+  review (= 5.9.0)
+  unicode-display_width
+
+BUNDLED WITH
+   2.4.10
