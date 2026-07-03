@@ -1,4 +1,4 @@
-# iOSDC　Japan　2025　Pamphlet　Sample
+# 「実体験から学ぶ！ iOSDC Japan パンフレット記事入稿のコツ」サンプルプロジェクト置き場
 
 iOSDC Japan 2025 パンフレット記事「[実体験から学ぶ！ iOSDC Japan パンフレット記事入稿のコツ](https://fortee.jp/iosdc-japan-2025/proposal/c1ac1019-07fd-466b-899e-c2f48bc1ceaf)」で使用したサンプルプロジェクト置き場です。
 
