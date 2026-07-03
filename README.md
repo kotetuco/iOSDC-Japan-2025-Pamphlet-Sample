@@ -67,8 +67,6 @@ bundle install
 bundle exec rake pdf
 ```
 
-Re:VIEW のバージョンは `Gemfile` で `5.9.0` を指定しています。
-
 ## CMYK PDF を出力する場合
 
 `Rakefile` には CMYK 変換用の `pdf_cmyk` タスクもあります。Ghostscript が利用できる環境では以下のコマンドで `book_cmyk.pdf` を生成できます。
