@@ -194,4 +194,6 @@ iOSDC Japan のパンフレット記事は、決められたページ数と入�
 
 ### 本稿で扱ったサンプル一式の配布先（GitHub）
 
-![https://github.com/kotetuco/iOSDC-Japan-2025-Pamphlet-Sample](images/qrcode.jpg){scale=1.0}
+![qrcode](images/qrcode.jpg){scale=0.35}
+
+https://github.com/kotetuco/iOSDC-Japan-2025-Pamphlet-Sample

@@ -188,7 +188,13 @@ iOSDC Japan のパンフレット記事は、決められたページ数と入�
 
 === 本稿で扱ったサンプル一式の配布先（GitHub）
 
-//image[qrcode][https://github.com/kotetuco/iOSDC-Japan-2025-Pamphlet-Sample][scale=1.0]{
+//embed[latex]{
+\begin{center}
+\includegraphics[width=16mm]{images/qrcode.png}
+
+\smallskip
+https://github.com/kotetuco/iOSDC-Japan-2025-Pamphlet-Sample
+\end{center}
 //}
 
 //footnote[fn1][Desk Top Publishing。PC 上で印刷物のデザインや編集を行うこと。]
